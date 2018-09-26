@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Neon Admin Panel" />
+    <meta name="author" content="Laborator.co" />
+    <link rel="icon" href="assets/images/favicon.jpg">
+    <title>APEX-ESS</title>
+    <link rel="stylesheet" href="assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css" id="style-resource-1">
+    <link rel="stylesheet" href="assets/css/font-icons/entypo/css/entypo.css" id="style-resource-2">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic" id="style-resource-3">
+    <link rel="stylesheet" href="assets/css/bootstrap.css" id="style-resource-4">
+    <link rel="stylesheet" href="assets/css/neon-core.css" id="style-resource-5">
+    <link rel="stylesheet" href="assets/css/neon-theme.css" id="style-resource-6">
+    <link rel="stylesheet" href="assets/css/neon-forms.css" id="style-resource-7">
+    <link rel="stylesheet" href="assets/css/custom.css" id="style-resource-8">
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+</head>
+
+<body class="page-body page-fade" data-url="#">
+    <div class="page-container">
+        <div class="sidebar-menu">
+            <div class="sidebar-menu-inner">
+                <header class="logo-env">
+                    <!-- logo -->
+                    <div class="logo"> <a href="index.html"> <img src="assets/images/logo.png" width="170" alt="" /> </a> </div>
+                    <!-- logo collapse icon -->
+                    <div class="sidebar-collapse with-animation">
+                        <a href="#" class="sidebar-collapse-icon">
+                            <!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition --><i class="entypo-menu"></i> </a>
+                    </div>
+                    <!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
+                    <div class="sidebar-mobile-menu visible-xs">
+                        <a href="#" class="with-animation">
+                            <!-- add class "with-animation" to support animation --><i class="entypo-menu"></i> </a>
+                    </div>
+                </header>
+                <ul id="main-menu" class="main-menu">
+                    <li class="has-sub"> <a href="index.html"><i class="entypo-gauge"></i>
+    <span class="title">Dashboard</span></a>
+                        <ul>
+                            <li><a href="index.html"><i class="entypo-home"></i><span class="title">Home</span></a></li>
+                            <li><a href="roles.html"><i class="entypo-attention"></i><span class="title">Roles</span></a></li>
+                            <li><a href="permissions.html"><i class="entypo-lock"></i><span class="title">Permissions</span></a></li>
+                            <li><a href="accounts.html"><i class="entypo-users"></i><span class="title">Users</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub"> <a href="#"><i class="entypo-flight"></i>
+     <span class="title">Leave</span></a>
+                        <ul>
+                            <li> <a href="leave.html"><i class="entypo-pencil"></i><span class="title">Apply for leave</span></a> </li>
+                            <li> <a href="leavehistory.html"><i class="entypo-eye"></i><span class="title">View leave history</span></a> </li>
+                        </ul>
+                    </li>
+                    <li class="has-sub"> <a href="#"><i class="entypo-credit-card"></i>
+      <span class="title">Loans</span></a>
+                        <ul>
+                            <li> <a href="loan.html"><i class="entypo-pencil"></i><span class="title">Apply for loan</span></a> </li>
+                            <li> <a href="loanbalance.html"><i class="entypo-eye"></i><span class="title">View loan balances</span></a> </li>
+                        </ul>
+                    </li>
+                    <li class="has-sub"> <a href="#"><i class="entypo-doc-text"></i>
+      <span class="title">Grievances</span></a>
+                        <ul>
+                            <li><a href="grievance.html"><i class="entypo-inbox"></i><span class="title">Appraisal grievances</span></a></li>
+                            <li><a href="Gengrievance.html"><i class="entypo-inbox"></i><span class="title">General grievances</span></a></li>
+                            <li><a href="#"><i class="entypo-eye"></i><span class="title">View grievance reports</span></a> </li>
+                        </ul>
+                    </li>
+                    <li class="has-sub"> <a href="#"><i class="entypo-book"></i>
+        <span class="title">Training</span></a>
+                        <ul>
+                            <li> <a href="training.html"><i class="entypo-pencil"></i><span class="title">Apply for training</span></a> </li>
+                            <!-- <li> <a href="#"><span class="title">Advanced Plugins</span></a> </li> -->
+                        </ul>
+                    </li>
+                    <li class="has-sub"> <a href="#"><i class="entypo-minus-circled"></i>
+        <span class="title">Incidents</span></a>
+                        <ul>
+                            <li> <a href="incidents.html"><i class="entypo-inbox"></i><span class="title">Submit Incidents</span></a> </li>
+                            <li> <a href="allincidents.html"><i class="entypo-eye"></i><span class="title">View all Incidents</span></a> </li>
+                        </ul>
+                    </li>
+                    <li class="has-sub"> <a href="#"><i class="entypo-cc-nc"></i>
+        <span class="title">Claims</span></a>
+                        <ul>
+                            <li> <a href="medicalreq.html"><i class="entypo-plus"></i><span class="title">Medical Claim</span></a> </li>
+                            <li> <a href="spectaclereq.html"><i class="entypo-eye"></i><span class="title">Spectacle Claim</span></a> </li>
+                            <li> <a href="expensereq.html"><i class="entypo-basket"></i><span class="title">Expense Claim</span></a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="scholarship.html"><i class="entypo-book-open"></i><span class="title">Scholarships</span></a> </li>
+                    <li class="has-sub"> <a href="objsetting.html"><i class="entypo-flow-tree"></i><span class="title">Objective Setting</span></a>
+                        <ul>
+                            <li> <a href="midreview.html"><i class="entypo-flow-line"></i><span class="title">Mid year Review</span></a> </li>
+                            <li> <a href="endreview.html"><i class="entypo-flow-line"></i><span class="title">End of Year Review</span></a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="exitInterview.html"><i class="entypo-back"></i><span class="title">Exit Request</span></a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="row">
+                <!-- Profile Info and Notifications -->
+                <div class="col-md-6 col-sm-8 clearfix">
+                    <ul class="user-info pull-left pull-none-xsm">
+                        <!-- Profile Info -->
+                        <li class="profile-info dropdown">
+                            <!-- add class "pull-right" if you want to place this from right --><a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="assets/images/thumb-1%402x.png" alt="" class="img-circle" width="44" />
+      User
+      </a>
+                            <ul class="dropdown-menu">
+                                <!-- Reverse Caret -->
+                                <li class="caret"></li>
+                                <!-- Profile sub-links -->
+                                <li> <a href="#"> <i class="entypo-user"></i>
+      Profile
+      </a> </li>
+                                <li> <a href="inbox.html"> <i class="entypo-mail"></i>
+      Pending Request
+      </a> </li>
+                                <li> <a href="payslip.html"> <i class="entypo-calendar"></i>
+      PaySlip
+      </a> </li>
+                                <li> <a href="lockscreen.html"> <i class="entypo-clipboard"></i>
+      Lock
+      </a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Raw Links -->
+                <div class="col-md-6 col-sm-4 clearfix hidden-xs">
+                    <ul class="list-inline links-list pull-right">
+                        <span class="badge badge-success chat-notifications-badge is-hidden">0</span> </a>
+                        </li>
+                        <li class="sep"></li>
+                        <li> <a href="extra/login/index.html">
+Log Out <i class="entypo-logout right"></i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <h2>My Open Processes</h2>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="panel-title"><strong></strong></div>
+                </div>
+                <table class="table table-bordered table-responsive">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Workflow Name</th>
+                            <th>Creation Date</th>
+                            <th>Created By</th>
+                            <th>Last Updated</th>
+                            <th>Pending</th>
+                            <th>Type of Request</th>
+                            <th>Request Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br />
+            <br />
+            <footer class="main">
+                <div class="pull-right"> <a href="#" target="_blank"><strong>Employee Self Service</strong></a> </div>
+                &copy; 2017 <strong>ARB Apex Bank</strong> Bsystems Limited</footer>
+        </div>
+        <!-- Imported styles on this page -->
+        <link rel="stylesheet" href="assets/js/datatables/datatables.css" id="style-resource-1">
+        <link rel="stylesheet" href="assets/js/select2/select2-bootstrap.css" id="style-resource-2">
+        <link rel="stylesheet" href="assets/js/select2/select2.css" id="style-resource-3">
+        <script src="assets/js/gsap/TweenMax.min.js" id="script-resource-1"></script>
+        <script src="assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js" id="script-resource-2"></script>
+        <script src="assets/js/bootstrap.js" id="script-resource-3"></script>
+        <script src="assets/js/joinable.js" id="script-resource-4"></script>
+        <script src="assets/js/resizeable.js" id="script-resource-5"></script>
+        <script src="assets/js/neon-api.js" id="script-resource-6"></script>
+        <script src="assets/js/cookies.min.js" id="script-resource-7"></script>
+        <script src="assets/js/datatables/datatables.js" id="script-resource-8"></script>
+        <script src="assets/js/select2/select2.min.js" id="script-resource-9"></script>
+        <script src="assets/js/neon-chat.js" id="script-resource-10"></script>
+        <!-- JavaScripts initializations and stuff -->
+        <script src="assets/js/neon-custom.js" id="script-resource-11"></script>
+        <!-- Demo Settings -->
+        <script src="assets/js/neon-demo.js" id="script-resource-12"></script>
+        <script src="assets/js/neon-skins.js" id="script-resource-13"></script>
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-28991003-7']);
+        _gaq.push(['_setDomainName', 'demo.neontheme.com']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+        </script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                var $table1 = jQuery('#table-1');
+                // Initialize DataTable
+                $table1.DataTable({
+                    "aLengthMenu": [
+                        [10, 25, 50, -1],
+                        [10, 25, 50, "All"]
+                    ],
+                    "bStateSave": true
+                });
+                // Initalize Select Dropdown after DataTables is created
+                $table1.closest('.dataTables_wrapper').find('select').select2({
+                    minimumResultsForSearch: -1
+                });
+            });
+        </script>
+</body>
+
+</html>
